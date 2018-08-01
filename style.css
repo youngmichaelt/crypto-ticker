@@ -26,11 +26,11 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 15vh;
-  left: 28vw;
-  width: 15vw;
-  height: 11vh;
-  border-radius: 55vw;
+  top: 15%;
+  left: 28%;
+  width: 15%;
+  height: 11%;
+  border-radius: 55vh;
   text-align:center;
 
 
@@ -42,10 +42,10 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 15vh;
-  left: 51vw;
-  width: 15vw;
-  height: 11vh;
+  top: 15%;
+  left: 51%;
+  width: 15%;
+  height: 11%;
   border-radius: 55vh;
   text-align:center;
 }
@@ -56,10 +56,10 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 35vh;
-  left: 51vw;
-  width: 15vw;
-  height: 11vh;
+  top: 35%;
+  left: 51%;
+  width: 15%;
+  height: 11%;
   border-radius: 55vh;
   text-align:center;
 }
@@ -70,10 +70,10 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 35vh;
-  left: 28vw;
-  width: 15vw;
-  height: 11vh;
+  top: 35%;
+  left: 28%;
+  width: 15%;
+  height: 11%;
   border-radius: 55vh;
   text-align:center;
 }
