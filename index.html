@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Bitcoin</title>
+  </head>
+  <body>
+
+    <div id="particles-js">
+      <div class="container">
+
+
+        <div class="price" id="circle">
+
+
+            <label id="priceHeader">Price:</label>
+            <br>
+            <br>
+            <label id="dollar">$</label>
+            <label id="price" for="price"></label>
+
+            <!-- <label id="mkcap" for="mkcap"></label> -->
+
+
+
+
+
+            <!-- <div class="imageContainer">
+              <img src="logo.png" id="logo">
+            </div> -->
+
+
+        </div>
+        <div class="mkcap" id="circle">
+          <label id="mkcapHeader">Market Cap:</label>
+          <br>
+          <br>
+          <label id="mkcap" for="mkcap"></label>
+
+        </div>
+        <div class="vol" id="circle">
+          <label id="volHeader">Volume:</label>
+          <br>
+          <br>
+          <label id="vol" for="vol"></label>
+
+        </div>
+        <div class="change" id="circle">
+          <label id="changeHeader">Change:</label>
+          <br>
+          <br>
+          <label id="change" for="change"></label>
+
+        </div>
+        <select id="choice" onchange="change1(), priceCheck()">
+
+          <option value="bitcoin">Bitcoin</option>
+          <option value="ethereum">Ethereum</option>
+        </select>
+        <!-- <button type="button" onclick="window.location.reload()"></button> -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+    </script>
+    <script>
+      function change1(){
+        var choice = document.querySelector('#choice').value;
+
+        if (choice == "bitcoin"){
+          particlesJS.load('particles-js', 'bitcoin.json', function(){
+            console.log('bitcoin.json loaded');
+          })
+      }
+      else if (choice == "ethereum"){
+        particlesJS.load('particles-js', 'ethereum.json', function(){
+          console.log('ethereum.json loaded');
+        })
+        console.log('e');
+        // window.location.reload();
+    }}
+      change1();
+    </script>
+    <script src='main.js'>
+
+    </script>
+    <script src="countUp.js">
+
+    </script>
+  </body>
+</html>

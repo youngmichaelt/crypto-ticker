@@ -1,0 +1,145 @@
+
+#particles-js{
+  background: #2f3640;
+  height: 100vh;
+}
+
+
+.price#circle{
+  background: #535c68;
+  /* background: #2f3640; */
+  opacity: 0.9;
+  padding: 2em;
+  /* border: #ccc 2px solid; */
+  position: fixed;
+  top: 15vh;
+  left: 28vw;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 55vw;
+  text-align:center;
+
+
+}
+.mkcap#circle {
+  background: #535c68;
+  /* background: #2f3640; */
+  opacity: 0.9;
+  padding: 2em;
+  /* border: #ccc 2px solid; */
+  position: fixed;
+  top: 15vh;
+  left: 51vw;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 55vh;
+  text-align:center;
+}
+.vol#circle {
+  background: #535c68;
+  /* background: #2f3640; */
+  opacity: 0.9;
+  padding: 2em;
+  /* border: #ccc 2px solid; */
+  position: fixed;
+  top: 35vh;
+  left: 51vw;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 55vh;
+  text-align:center;
+}
+.change#circle {
+  background: #535c68;
+  /* background: #2f3640; */
+  opacity: 0.9;
+  padding: 2em;
+  /* border: #ccc 2px solid; */
+  position: fixed;
+  top: 35vh;
+  left: 28vw;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 55vh;
+  text-align:center;
+}
+
+#priceHeader{
+  color: #fff;
+  opacity: 1;
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+
+}
+#price{
+  color: #fff;
+  opacity: 1;
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+
+}
+#mkcapHeader{
+  color: #fff;
+  opacity: 1;
+
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#mkcap{
+  color: #fff;
+  opacity: 1;
+  top: 15vw;
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#volHeader{
+  color: #fff;
+  opacity: 1;
+
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#vol{
+  color: #fff;
+  opacity: 1;
+  top: 15vw;
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#changeHeader{
+  color: #fff;
+  opacity: 1;
+
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#change{
+  color: #fff;
+  opacity: 1;
+  top: 15vw;
+
+  /* font-size: 3vh; */
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#dollar{
+  color: #fff;
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+/* #logo {
+
+  width: 3vw;
+  height: auto;
+} */

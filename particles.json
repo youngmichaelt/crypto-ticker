@@ -1,0 +1,45 @@
+{
+  "particles":{
+    "number":{
+      "value": 100
+    },
+    "color":{
+      "value":"#ecf0f1"
+    },
+    "shape": {
+      "type": "image",
+      "image":{
+        "src": "https://bitstickers.net/wp-content/uploads/2014/02/btc-mono-ring-orange.jpg",
+        "src": "https://cryptoindex.guru/wp-content/uploads/2018/01/bitcoin_PNG48.png"
+      },
+
+      "stroke":{
+        "width":1,
+        "color":"#ccc"
+      }
+
+    },
+    "size":{
+      "value":50,
+      "random":true,
+      "anim": {
+        "enable": true,
+        "speed": 5
+      }
+    },
+    "opacity":{
+      "value": 1
+    },
+    "interactivity": {
+      "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+      }}
+
+
+
+    }
+  }
