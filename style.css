@@ -2,7 +2,21 @@
 #particles-js{
   background: #2f3640;
   height: 100vh;
+  /* position: fixed; */
 }
+
+.choice {
+  position: fixed;
+  font-family: Arial;
+  background: #fff;
+  top: 97vh;
+  left: 88.2vw;
+  height: 3vh;
+  width: 10vw;
+  font-size: 2.2vh;
+
+}
+
 
 
 .price#circle{
