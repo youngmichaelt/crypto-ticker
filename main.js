@@ -28,14 +28,41 @@ function priceCheck() {
         p = p.replace("$", '');
         f = parseFloat(p);
 
+        var mc = mkcap.replace(".", '');
+        // console.log(mc);
+        mc = mc.replace('B', '');
+        mc = mc.replace('$', '');
+        mc = parseInt(mc);
+
+        var v = vol.replace(',', '');
+        v = v.replace('$','');
+        v = v.replace('M','');
+        v = parseFloat(v);
+
+        var c = change;
+        c = parseFloat(c);
 
 
-        // var c = new CountUp('price',0, f,2,2);
-        // c.start()
-        // document.getElementById('price').innerHTML = price;
-        document.getElementById('mkcap').innerHTML = mkcap;
-        document.getElementById('vol').innerHTML = vol;
-        document.getElementById('change').innerHTML = change + "%";
+
+        f1 = f * .9;
+        var pCount = new CountUp('price',f1, f,2,2);
+        pCount.start();
+
+        mc1 = mc * .9;
+        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        mcCount.start();
+
+        v1 = v * .9;
+        var vCount = new CountUp('vol',v1, v,2,2);
+        vCount.start();
+
+        c1 = c * .9;
+        var cCount = new CountUp('change',0, c,2,2);
+        cCount.start();
+
+        // document.getElementById('mkcap').innerHTML = mkcap;
+        // document.getElementById('vol').innerHTML = vol;
+        // document.getElementById('change').innerHTML = change + "%";
         // document.getElementById('change').innerHTML = 'Change: '+ change;
         // var c = new CountUp('price',0,price);
         // c.start()
@@ -43,14 +70,15 @@ function priceCheck() {
 
 
 
-    }).then(p => {
-      f1 = f * .9;
-      console.log(f1);
-      var c = new CountUp('price',f1, f,2,2);
-      c.start()
-
-
     })
+    // .then(p => {
+    //   f1 = f * .9;
+    //   console.log(f1);
+    //   var c = new CountUp('price',f1, f,2,2);
+    //   c.start()
+    //
+    //
+    // })
 
 
          // setTimeout(priceCheck, 10000);
@@ -78,27 +106,57 @@ function priceCheck() {
         var p = price.replace(",", '');
         p = p.replace("$", '');
         f = parseFloat(p);
-        
+
+        var mc = mkcap.replace(".", '');
+        // console.log(mc);
+        mc = mc.replace('B', '');
+        mc = mc.replace('$', '');
+        mc = parseInt(mc);
+
+        var v = vol.replace(',', '');
+        v = v.replace('$','');
+        v = v.replace('M','');
+        v = parseFloat(v);
+
+        f1 = f * .9;
+        var pCount = new CountUp('price',f1, f,2,2);
+        pCount.start();
+
+        mc1 = mc * .9;
+        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        mcCount.start();
+
+        v1 = v * .9;
+        var vCount = new CountUp('vol',v1, v,2,2);
+        vCount.start();
+
+        var c = change;
+        c = parseFloat(c);
+
+        c1 = c * .9;
+        var cCount = new CountUp('change',0, c,2,2);
+        cCount.start();
 
 
 
         // var c = new CountUp('price',0, f,2,2);
         // c.start()
         // document.getElementById('price').innerHTML = price;
-        document.getElementById('mkcap').innerHTML = mkcap;
-        document.getElementById('vol').innerHTML = vol;
+        // document.getElementById('mkcap').innerHTML = mkcap;
+        // document.getElementById('vol').innerHTML = vol;
         document.getElementById('change').innerHTML = change + "%";
 
 
         console.log(p);
 
 
-    }).then(p => {
-      f1 = f * .9;
-      var c = new CountUp('price',f1, f,2,2);
-      c.start()
-
     })
+    // .then(p => {
+    //   f1 = f * .9;
+    //   var c = new CountUp('price',f1, f,2,2);
+    //   c.start()
+    //
+    // })
 
 
 
