@@ -156,7 +156,12 @@ body{
 }
 #dollar{
   color: #fff;
-  font-size: calc(12px +  1.5vw);
+  font-size: calc(12px +  1.25vw);
+  font-family: arial;
+}
+#character{
+  color: #fff;
+  font-size: calc(12px +  .4vw);
   font-family: arial;
 }
 .donate{
@@ -166,4 +171,15 @@ body{
   font-size: calc(1px +  1vw);
   font-family: arial;
 
+}
+#donatelabel{
+  position: fixed;
+  left: 10vh;
+  bottom: .5vh;
+}
+.button {
+
+  left: 0vh;
+  position: fixed;
+  font-size: 2vh;
 }

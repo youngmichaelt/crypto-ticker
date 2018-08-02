@@ -38,7 +38,7 @@
           <br>
           <label id="dollar">$</label>
           <label id="mkcap" for="mkcap"></label>
-          <label id="dollar">B</label>
+          <label id="character">B</label>
 
         </div>
         <div class="vol" id="circle">
@@ -47,7 +47,7 @@
           <br>
           <label id="dollar">$</label>
           <label id="vol" for="vol"></label>
-          <label id="dollar">M</label>
+          <label id="character">M</label>
         </div>
         <div class="change" id="circle">
           <label id="changeHeader">Change(24hr):</label>
@@ -65,9 +65,25 @@
         <!-- <button type="button" onclick="window.location.reload()"></button> -->
       </div>
       <div class="donate">
-        <label>Donate:</label>
+        <button type="button" onclick="showLbl()" class="button" >Donate</button>
+        <label id="donatelabel" style="display: none">Bitcoin Donations: 3KUNFB5kyqQYguQFwW812Uo2QPTMEKzfsG</label>
+
+
       </div>
     </div>
+    <script>
+      function showLbl(){
+        var x = document.getElementById("donatelabel");
+
+        if (x.style.display == "none") {
+        x.style.display = "";
+    } else {
+        x.style.display = "none";
+    }
+        // document.getElementById('donatelabel').style.display = '';
+
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
     </script>
     <script>
