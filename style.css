@@ -1,7 +1,13 @@
-
+body{
+  background: #2f3640;
+}
 #particles-js{
   background: #2f3640;
-  height: 100vh;
+   /* width: 98vw; */
+  height: 98vh;
+  overflow-y: hidden;
+  position: relative;
+
   /* position: fixed; */
 }
 
@@ -56,7 +62,7 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 35%;
+  top: 37.5%;
   left: 51%;
   width: 15%;
   height: 11%;
@@ -70,7 +76,7 @@
   padding: 2em;
   /* border: #ccc 2px solid; */
   position: fixed;
-  top: 35%;
+  top: 37.5%;
   left: 28%;
   width: 15%;
   height: 11%;
@@ -81,7 +87,8 @@
 #priceHeader{
   color: #fff;
   opacity: 1;
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px + 1vw);
+
   font-family: arial;
 
 }
@@ -89,7 +96,7 @@
   color: #fff;
   opacity: 1;
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1.5vw);
   font-family: arial;
 
 }
@@ -99,7 +106,7 @@
 
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1vw);
   font-family: arial;
 }
 #mkcap{
@@ -108,7 +115,7 @@
   top: 15vw;
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1.5vw);
   font-family: arial;
 }
 #volHeader{
@@ -117,7 +124,7 @@
 
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1vw);
   font-family: arial;
 }
 #vol{
@@ -126,7 +133,7 @@
   top: 15vw;
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1.5vw);
   font-family: arial;
 }
 #changeHeader{
@@ -135,7 +142,7 @@
 
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1vw);
   font-family: arial;
 }
 #change{
@@ -144,16 +151,19 @@
   top: 15vw;
 
   /* font-size: 3vh; */
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1.5vw);
   font-family: arial;
 }
 #dollar{
   color: #fff;
-  font-size: calc(12px +  1.25vw);
+  font-size: calc(12px +  1.5vw);
   font-family: arial;
 }
-/* #logo {
+.donate{
+  color: #fff;
+  position: fixed;
+  top: 97%;
+  font-size: calc(1px +  1vw);
+  font-family: arial;
 
-  width: 3vw;
-  height: auto;
-} */
+}
