@@ -33,11 +33,12 @@ function priceCheck1() {
         p = p.replace("$", '');
         f = parseFloat(p);
 
-        var mc = mkcap.replace(".", '');
+        // var mc = mkcap.replace(".", '');
         // console.log(mc);
-        mc = mc.replace('B', '');
+        var mc = mkcap.replace('B', '');
         mc = mc.replace('$', '');
-        mc = parseInt(mc);
+        mc = parseFloat(mc);
+
 
         var v = vol.replace(',', '');
         v = v.replace('$','');
@@ -60,7 +61,7 @@ function priceCheck1() {
         pCount.start();
 
         mc1 = mc * .99999;
-        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        var mcCount = new CountUp('mkcap',mc1, mc,2,2);
         mcCount.start();
 
         v1 = v * .99999;
@@ -118,11 +119,12 @@ function priceCheck1() {
         p = p.replace("$", '');
         f = parseFloat(p);
 
-        var mc = mkcap.replace(".", '');
+        // var mc = mkcap.replace(".", '');
         // console.log(mc);
-        mc = mc.replace('B', '');
+        // console.log(mkcap);
+        var mc = mkcap.replace('B', '');
         mc = mc.replace('$', '');
-        mc = parseInt(mc);
+        mc = parseFloat(mc);
 
         var v = vol.replace(',', '');
         v = v.replace('$','');
@@ -134,7 +136,7 @@ function priceCheck1() {
         pCount.start();
 
         mc1 = mc * .9999;
-        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        var mcCount = new CountUp('mkcap',mc1, mc,2,2);
         mcCount.start();
 
         v1 = v * .9999;
@@ -207,6 +209,7 @@ window.onload = function priceCheck() {
         // data = data.USD;
         price = data.DISPLAY.BTC.USD.PRICE;
         mkcap = data.DISPLAY.BTC.USD.MKTCAP;
+        // console.log(mkcap);
 
         change = data.DISPLAY.BTC.USD.CHANGEPCT24HOUR;
         vol = data.DISPLAY.BTC.USD.TOTALVOLUME24HTO;
@@ -214,11 +217,12 @@ window.onload = function priceCheck() {
         p = p.replace("$", '');
         f = parseFloat(p);
 
-        var mc = mkcap.replace(".", '');
+        // var mc = mkcap.replace(".", '');
         // console.log(mc);
-        mc = mc.replace('B', '');
+        var mc = mkcap.replace('B', '');
+        // console.log(mc);
         mc = mc.replace('$', '');
-        mc = parseInt(mc);
+        mc = parseFloat(mc);
 
         var v = vol.replace(',', '');
         v = v.replace('$','');
@@ -241,7 +245,7 @@ window.onload = function priceCheck() {
         pCount.start();
 
         mc1 = mc * 0;
-        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        var mcCount = new CountUp('mkcap',mc1, mc,2,2);
         mcCount.start();
 
         v1 = v * 0;
@@ -299,11 +303,12 @@ window.onload = function priceCheck() {
         p = p.replace("$", '');
         f = parseFloat(p);
 
-        var mc = mkcap.replace(".", '');
+        // var mc = mkcap.replace(".", '');
         // console.log(mc);
-        mc = mc.replace('B', '');
+        // console.log(mkcap);
+        var mc = mkcap.replace('B', '');
         mc = mc.replace('$', '');
-        mc = parseInt(mc);
+        mc = parseFloat(mc);
 
         var v = vol.replace(',', '');
         v = v.replace('$','');
@@ -315,7 +320,7 @@ window.onload = function priceCheck() {
         pCount.start();
 
         mc1 = mc * 0;
-        var mcCount = new CountUp('mkcap',mc1, mc,0,2);
+        var mcCount = new CountUp('mkcap',mc1, mc,2,2);
         mcCount.start();
 
         v1 = v * 0;
