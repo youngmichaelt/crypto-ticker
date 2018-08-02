@@ -1,11 +1,15 @@
 
-
-
 function priceCheck() {
 
   if(typeof timer !== "undefined"){
     clearTimeout(timer);
+
   }
+
+  if (window.performance) {
+  console.info("window.performance work's fine on this browser");
+}
+
 
   var choice = document.querySelector('#choice').value;
   if (choice == "bitcoin"){
@@ -42,21 +46,27 @@ function priceCheck() {
         var c = change;
         c = parseFloat(c);
 
+        if (performance.navigation.type == 1) {
+          console.info( "This page is reloaded" );
+        } else {
+          console.info( "This page is not reloaded");
+        }
 
 
-        f1 = f * .9;
+
+        f1 = f * .999;
         var pCount = new CountUp('price',f1, f,2,2);
         pCount.start();
 
-        mc1 = mc * .9;
+        mc1 = mc * .9999;
         var mcCount = new CountUp('mkcap',mc1, mc,0,2);
         mcCount.start();
 
-        v1 = v * .9;
+        v1 = v * .9999;
         var vCount = new CountUp('vol',v1, v,2,2);
         vCount.start();
 
-        c1 = c * .9;
+        c1 = c * .9999;
         var cCount = new CountUp('change',0, c,2,2);
         cCount.start();
 
@@ -118,15 +128,15 @@ function priceCheck() {
         v = v.replace('M','');
         v = parseFloat(v);
 
-        f1 = f * .9;
+        f1 = f * .99;
         var pCount = new CountUp('price',f1, f,2,2);
         pCount.start();
 
-        mc1 = mc * .9;
+        mc1 = mc * .99;
         var mcCount = new CountUp('mkcap',mc1, mc,0,2);
         mcCount.start();
 
-        v1 = v * .9;
+        v1 = v * .99;
         var vCount = new CountUp('vol',v1, v,2,2);
         vCount.start();
 
@@ -164,15 +174,8 @@ function priceCheck() {
 
 
   }
-     // timer = setTimeout(priceCheck, 10000);
+     timer = setTimeout(priceCheck, 10000);
 
-}
-
-
-
-
-
-
-
+};
 
 priceCheck();
